@@ -24,14 +24,29 @@ h4,
 h5,
 h6 {
   color: var(--primary-text-color);
+  margin: 0 auto;
 }
-ul {
+/* Утиліти */
+.ul-item {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
-a {
+.a-link {
   text-decoration: none;
 }
 
+.container {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 15px;
+}
+
+/* Header */
+header {
+  outline: 2px solid tomato;
+}
 /* logo */
 .logo-font {
   color: var(--primary-text-color);
@@ -43,7 +58,9 @@ a {
 .logo-accent-color {
   color: var(--accent-color);
 }
+
 /* Navigation */
+
 .navigation-link .link {
   color: var(--primary-text-color);
   font-weight: 500;
@@ -55,6 +72,7 @@ a {
 .navigation-link .link:focus {
   color: var(--accent-color);
 }
+
 .contact-item .item {
   color: var(--paragraph-text-color);
   font-weight: 500;
@@ -66,7 +84,12 @@ a {
 .contact-item .item:focus {
   color: var(--accent-color);
 }
+
 /* hero */
+.hero {
+  outline: 2px solid tomato;
+  text-align: center;
+}
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -87,37 +110,70 @@ a {
 
   cursor: pointer;
 }
-.paragraph {
-  font-size: 14px;
-  line-height: 1.8;
+.hero-list {
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+.hero-list-item {
+  outline: 2px solid tomato;
+}
 }
 .benefits {
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
+.paragraph {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-size: 14px;
+  line-height: 1.8;
+}
+
 /* Company services */
+.company-services {
+  outline: 2px solid tomato;
+}
+
 .services-title {
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
 }
-
+.service-pic {
+  margin-bottom: 94px;
+}
 /* team-staff */
+.team-staff-block {
+  outline: 2px solid tomato;
+}
+.team-block{
+  margin-bottom: 94px;
+}
 .team-staff {
+margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
 }
 .staff-name {
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
 }
 .staff-job {
+  margin: 0;
   font-size: 16px;
   line-height: 1.2;
 }
