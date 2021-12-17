@@ -15,27 +15,28 @@
 </head>
 
 <body>
-    <div class="container">
+    
     <header>
+        <div class="container header-box">
             <a href="index.html" class="logo-font a-link"> <span class="logo-accent-color">Web</span>Studio</a>
             <nav>
                 <ul class="navigation-link ul-item ">
-                    <li> <a class="link a-link" href="index.html" >Студия</a></li>
-                    <li> <a class="link a-link" href="portfolio.html "  target="_blank" rel="noreferrer noopener">Портфолио</a></li>
-                    <li> <a class="link a-link" href="">Контакты</a></li>
+                    <li class="nav-child"> <a class="link a-link" href="index.html" >Студия</a></li>
+                    <li class="nav-child"> <a class="link a-link" href="portfolio.html "  target="_blank" rel="noreferrer noopener">Портфолио</a></li>
+                    <li class="nav-child"> <a class="link a-link" href="">Контакты</a></li>
                 </ul>              
             </nav>        
-            <ul class="contact-item ul-item">
-                <li><a class="item a-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a class="item a-link" href="tel:+380961111111">+38 096 111 11 11<a>    
+            <ul class="contact-item ul-item ">
+                <li class="contact-child"><a class="item a-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li class="contact-child"><a class="item a-link" href="tel:+380961111111">+38 096 111 11 11<a>    
                 </li>
             </ul>
+            </div>
     </header>
-    </div>
     <main> 
         <!--Hero-->
         <section class="hero">
-            <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+            <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
             <button type="button" class="button">Заказать услугу</button>
         </section>
         <section class="container hero-list">
@@ -63,9 +64,9 @@
         <section class="container company-services">
             <h2 class="services-title">Чем мы занимаемся</h2>
             <ul class="ul-item service-pic">
-                <li><img src="./images/img1.jpg" alt="печатанье текста на компютере" width="370"></li>
-                <li><img src="./images/img2.jpg" alt="работа за компютером" width="370"></li>
-                <li><img src="./images/img3.jpg" alt="работа на планшете" width="370"></li>
+                <li class="picture"><img src="./images/img1.jpg" alt="печатанье текста на компютере" width="370"></li>
+                <li class="picture"><img src="./images/img2.jpg" alt="работа за компютером" width="370"></li>
+                <li class="picture"><img src="./images/img3.jpg" alt="работа на планшете" width="370"></li>
             </ul>
         </section>
 
@@ -74,22 +75,22 @@
             <div class="container">
             <h2 class="team-staff">Наша команда</h2>
             <ul class="ul-item team-block">
-                <li>
+                <li class="team-profile">
                     <img src="./images/img4.jpg" alt="фотография работника компании" width="240">
                     <h3 class="staff-name">Игорь Демьяненко</h3>
                     <p class="staff-job">Product Designer</p>                   
                 </li>
-                <li>
+                <li class="team-profile">
                     <img src="./images/img5.jpg" alt="фотография работника компании" width="240">
                     <h3 class="staff-name">Ольга Репина</h3>
                     <p class="staff-job">Frontend Developer</p>                    
                 </li>
-                <li>
+                <li class="team-profile">
                     <img src="./images/img6.jpg" alt="фотография работника компании" width="240">
                     <h3 class="staff-name">Николай Тарасов</h3>
                     <p class="staff-job">Marketing</p>                    
                 </li>
-                <li>
+                <li class="team-profile">
                     <img src="./images/img7.jpg" alt="фотография работника компании" width="240">
                     <h3 class="staff-name">Михаил Ермаков</h3>
                     <p class="staff-job">UI Designer</p>                   
@@ -100,13 +101,16 @@
     </main>
 
     <!--Footer-->
-    <footer>
-        <a href="index.html" class="logo-font a-link"><span class="logo-accent-color">Web</span>Studio</a>
+    <footer class="footer">
+        <div class="container">
+        <a href="index.html" class="logo-font logo-footer a-link"><span class="logo-accent-color">Web</span><span class="accent-footer-reverse">Studio</span></a>
             <address class="footer-contact"> 
-                  г.Киев, пр-т Леси Украинки, 26 <br>
+                  <span class="address">г.Киев, пр-т Леси Украинки, 26</span> <br>
                 <a class="contact a-link" href="mailto:info@devstudio.com">info@example.com</a> <br>
                 <a class="contact a-link" href="tel:+380991111111">+38 099 111 11 11</a>
             </address>
+            </div>
+            
     </footer>
 </body>
 
