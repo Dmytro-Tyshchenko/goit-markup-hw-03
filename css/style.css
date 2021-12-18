@@ -312,15 +312,15 @@ section {
 .fl-result-list {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
-  padding: 0 0 94px 0;
+  margin: -15px;
+  padding: 0;
 }
 .fl-result-list .result {
   margin: 15px;
 }
 .result {
   width: 370px;
-  /* margin: 15px; */
+  margin: 15px;
 }
 
 .filter-result {
