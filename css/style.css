@@ -231,11 +231,13 @@ h6 {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
+  text-align: center;
 }
 .staff-job {
   margin: 0;
   font-size: 16px;
   line-height: 1.2;
+  text-align: center;
 }
 
 /* Footer */
@@ -322,12 +324,16 @@ section {
 }
 
 .filter-result {
+  margin-bottom: 4px;
+
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 .filter-category {
+  margin: 0;
+
   color: var(--paragraph-text-color);
   font-size: 16px;
   line-height: 1.9;
