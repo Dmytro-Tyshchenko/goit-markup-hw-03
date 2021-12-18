@@ -318,9 +318,13 @@ section {
 .fl-result-list .result {
   margin: 15px;
 }
+.card-profile {
+  padding: 0 20px 24px;
+}
 .result {
   width: 370px;
   margin: 15px;
+  border: 1px solid #eeeeee;
 }
 
 .filter-result {
