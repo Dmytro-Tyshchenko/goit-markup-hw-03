@@ -37,16 +37,17 @@ h6 {
   /* display:flex; */
   align-items: center;
 }
-
 .container {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
 }
-
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+.picture {
+  display: flex;
 }
 
 /* Header */
@@ -71,13 +72,15 @@ h6 {
 }
 
 /* Navigation */
-
 .navigation-link {
   display: flex;
   justify-content: flex-start;
-  padding: 32px 0;
+  padding: 0;
   margin-top: 0;
   margin-bottom: 0;
+}
+.nav-child {
+  padding: 32px 0;
 }
 
 .navigation-link .nav-child + .nav-child {
@@ -135,6 +138,8 @@ h6 {
 }
 .button {
   margin-bottom: 220px;
+  padding: 10px 32px;
+  border-radius: 4px;
 
   font-family: 'Roboto', sans-serif;
   color: var(--primary-white-color);
@@ -148,9 +153,6 @@ h6 {
   cursor: pointer;
 }
 
-/* .hero-list {
-  padding: 94px 0;
-} */
 .hero-list-item {
   outline: 2px solid tomato;
   display: flex;
@@ -158,8 +160,7 @@ h6 {
   padding: 0;
   justify-content: space-evenly;
 }
-
-.benefits {
+.hero-list-item .benefits {
   margin-bottom: 10px;
 
   font-weight: 700;
@@ -167,7 +168,9 @@ h6 {
   line-height: 1.14;
   text-transform: uppercase;
 }
-
+.hero-list-item .h-l-i-child + .h-l-i-child {
+  margin-left: 30px;
+}
 .paragraph {
   margin-top: 0;
   margin-bottom: 0;
@@ -180,6 +183,7 @@ h6 {
 /* Company services */
 .company-services {
   outline: 2px solid tomato;
+  padding-top: 0;
 }
 
 .services-title {
@@ -199,33 +203,35 @@ h6 {
 .service-pic .picture + .picture {
   margin-left: 30px;
 }
-/* team-staff */
-/* .test {
-  height: 648px;
-} */
 .team-staff-block {
   outline: 2px solid tomato;
   background-color: #f5f4fa;
 }
-.team-block {
-  margin: 0;
+.team-cont {
   display: flex;
-  /* padding: 0 0 94px 0; */
+  margin: 0;
+  padding: 0;
   justify-content: space-evenly;
   align-content: flex-end;
 }
-.team-block .team-profile + .team-profile {
+.team-profile {
+  border: 1px solid #eeeeee;
+  background-color: #fff;
+}
+.team-cont .team-profile + .team-profile {
   margin-left: 30px;
 }
-.team-staff {
-  padding-top: 94px;
+.team-staff-title {
+  padding: 0;
   margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
 }
 .staff-name {
+  margin-top: 30px;
   margin-bottom: 10px;
 
   font-weight: 500;
@@ -235,6 +241,8 @@ h6 {
 }
 .staff-job {
   margin: 0;
+  padding-bottom: 30px;
+
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
@@ -260,17 +268,21 @@ footer {
 .footer-contact {
   margin-top: 20px;
   color: var(--primary-text-color);
+
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.7;
 }
 .contact {
-  color: var(--paragraph-text-color);
+  color: #ffffff99;
 }
 .contact:hover,
 .contact:focus {
   color: var(--accent-color);
+}
+.footer-mail {
+  margin-bottom: 9px;
 }
 /* PORTFOLIO */
 section {
@@ -280,15 +292,19 @@ section {
 .button-list {
   display: flex;
   justify-content: center;
-  margin: 0;
-  padding-bottom: 34px;
+  margin-top: 0;
+  margin-bottom: 50px;
   padding-left: 0;
 }
+.bt-item {
+}
+
 .button-list .bt-item + .bt-item {
   margin-left: 8px;
 }
 
 .button-filter {
+  padding: 6px 22px;
   border-radius: 4px;
   border: 1px solid transparent;
 
@@ -319,7 +335,7 @@ section {
   margin: 15px;
 }
 .card-profile {
-  padding: 0 20px 24px;
+  padding: 20px 24px;
 }
 .result {
   width: 370px;
