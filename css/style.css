@@ -121,7 +121,7 @@ h6 {
 /* hero */
 .hero {
   padding-top: 180px;
-  /* outline: 2px solid tomato; */
+  padding-bottom: 220px;
   text-align: center;
   background-color: #2f303a;
 }
@@ -137,7 +137,6 @@ h6 {
   color: var(--primary-white-color);
 }
 .button {
-  margin-bottom: 220px;
   padding: 10px 32px;
   border-radius: 4px;
 
@@ -154,7 +153,6 @@ h6 {
 }
 
 .hero-list-item {
-  /* outline: 2px solid tomato; */
   display: flex;
   margin: 0;
   padding: 0;
@@ -183,7 +181,6 @@ h6 {
 
 /* Company services */
 .company-services {
-  /* outline: 2px solid tomato; */
   padding-top: 0;
 }
 
@@ -209,7 +206,6 @@ h6 {
   margin-left: 30px;
 } 
 .team-staff-block {
-  /* outline: 2px solid tomato; */
   background-color: #f5f4fa;
 }
 .team-block {
